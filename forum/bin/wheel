@@ -1,4 +1,4 @@
-#!"/home/saumya/Desktop/DJLit Forum/forum/bin/python3"
+#!/Users/vikirnt/Programming/virtualenv/forum/bin/python3.6
 
 # -*- coding: utf-8 -*-
 import re

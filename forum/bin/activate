@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/saumya/Desktop/DJLit Forum/forum"
+VIRTUAL_ENV="/Users/vikirnt/Programming/virtualenv/forum"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

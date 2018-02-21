@@ -1,4 +1,4 @@
-#!/home/saumya/Desktop/DJLit Forum/forum/bin/python
+#!/Users/vikirnt/Programming/virtualenv/forum/bin/python
 
 import sys
 import getopt
