@@ -18,7 +18,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 # Define placeholder gettext function
-# This function will mark strings in settings visible to makemessages
+# This function will mark strings in settings visible to makem essages
 # without need for Django's i18n features be initialized first.
 _ = lambda x: x
 
@@ -27,7 +27,8 @@ _ = lambda x: x
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'sla$cor3+9!o7$qq_d0g3c1dzrkhz!%a=&q9nuy-ga)c4ga&rl'
+with open ('./secretkey.txt', 'r') as f:
+    SECRET_KEY = f.read ()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
