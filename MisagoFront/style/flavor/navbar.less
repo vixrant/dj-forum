@@ -1,0 +1,36 @@
+//
+// Flavor Navbar
+// --------------------------------------------------
+
+
+.navbar-misago {
+  border-bottom: none;
+  background: @navbar-bg;
+  color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: white;
+  background: inherit;
+
+  &hover {
+    background: inherit;
+  }
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+  transition: 0.3s;
+  color: @navbar-inverse-link-hover-bg;
+}
+
+// Round up user's avatar
+.navbar-misago .user-avatar {
+  background: #fff;
+  border-radius: @border-radius-small;
+}
+
+
+// Round up brand's icon
+.navbar-misago .brand-link img {
+  border-radius: @border-radius-small;
+}
