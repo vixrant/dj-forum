@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "${workspaceFolder}/forum/bin/python"
+    "python.pythonPath": "${workspaceFolder}/forum/bin/python",
+    "python.linting.enabled": false
 }
