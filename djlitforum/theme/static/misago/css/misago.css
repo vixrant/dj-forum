@@ -1,4 +1,5 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+@import url('https://fonts.googleapis.com/css?family=Nunito');
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -8228,6 +8229,7 @@ Date: 2013-04-02
 body,
 html {
   background: #F7F6F3;
+  font-family: 'Nunito', sans-serif;
 }
 #misago-container {
   background: #F7F6F3;
@@ -8528,8 +8530,8 @@ abbr {
 .btn-primary.btn-outline.disabled,
 .btn-primary.btn-outline.disabled:hover,
 .btn-primary.btn-outline.disabled:active {
-  background: #D88292;
-  border: 1px solid #D88292;
+  background: #2ABB9B;
+  border: 1px solid #2ABB9B;
   color: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -8569,8 +8571,8 @@ abbr {
 .btn-primary.btn-outline.btn-loading:focus,
 .btn-primary.btn-outline.btn-loading:active:focus,
 .btn-primary.btn-outline.btn-loading:active {
-  background: #D88292;
-  border: 1px solid #D88292;
+  background: #2ABB9B;
+  border: 1px solid #2ABB9B;
   color: transparent;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -8746,7 +8748,7 @@ textarea.form-control:focus {
 .auth-message .btn:active {
   background: #fff;
   border-color: #fff;
-  color: #B2374D;
+  color: #2ABB9B;
 }
 .dropdown-menu {
   border: none;
@@ -8789,17 +8791,19 @@ textarea.form-control:focus {
 }
 .navbar-misago {
   border-bottom: none;
-  background: #721817;
+  background: #F62459;
   color: white;
+}
+.navbar-misagohover {
+  background: #fff;
 }
 .navbar-inverse .navbar-nav > li > a {
   color: white;
   background: inherit;
+  transition: 0.3s;
 }
 .navbar-inverse .navbar-nav > li > ahover {
   background: inherit;
-}
-.navbar-inverse .navbar-nav > li > a:hover {
   transition: 0.3s;
   color: inherit;
 }
@@ -8809,6 +8813,14 @@ textarea.form-control:focus {
 }
 .navbar-misago .brand-link img {
   border-radius: 3px;
+}
+.navbar-brand img {
+  background-color: white;
+  transition: 0.3s;
+}
+.navbar-brand imghover {
+  transition: 0.3s;
+  background-color: #ffda79;
 }
 .dropdown-search-results {
   border-radius: 0px 0px 4px 4px;
@@ -8866,7 +8878,7 @@ textarea.form-control:focus {
   border-bottom: none;
 }
 .page-header {
-  background-color: #721817;
+  background-color: #F62459;
   background-size: cover;
 }
 @media screen and (min-width: 992px) {
@@ -8891,8 +8903,8 @@ textarea.form-control:focus {
 .page-header .btn-outline.btn-default.disabled,
 .page-header .btn-outline.btn-default.disabled:hover,
 .page-header .btn-outline.btn-default.disabled:active {
-  background: #D88292;
-  border: 1px solid #D88292;
+  background: #2ABB9B;
+  border: 1px solid #2ABB9B;
   color: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -8907,8 +8919,8 @@ textarea.form-control:focus {
 }
 .page-header .btn-outline.btn-default:hover,
 .page-header .btn-outline.btn-default:focus {
-  background: #CD5F73;
-  border: 1px solid #CD5F73;
+  background: #2ABB9B;
+  border: 1px solid #2ABB9B;
   transition: 0.3s;
   color: #fff;
   -webkit-box-shadow: none;
@@ -8990,7 +9002,7 @@ textarea.form-control:focus {
 }
 .header-stats {
   color: #ededed;
-  text-shadow: 0px 1px 1px #721817;
+  text-shadow: 0px 1px 1px #F62459;
 }
 .header-stats li a,
 .header-stats li a:link,
@@ -9011,7 +9023,7 @@ textarea.form-control:focus {
   color: #fff !important;
 }
 .page-header .go-back-sm {
-  text-shadow: 0px 1px 1px #721817;
+  text-shadow: 0px 1px 1px #F62459;
 }
 .page-header .go-back-sm,
 .page-header .go-back-sm:link,
@@ -9025,7 +9037,7 @@ textarea.form-control:focus {
 }
 .page-header .breadcrumb {
   color: #ededed;
-  text-shadow: 0px 1px 1px #721817;
+  text-shadow: 0px 1px 1px #F62459;
 }
 .page-header .breadcrumb a,
 .page-header .breadcrumb a:link,
@@ -9039,7 +9051,7 @@ textarea.form-control:focus {
 }
 .page-header .breadcrumb li:before {
   color: #ededed;
-  text-shadow: 0px 1px 1px #721817;
+  text-shadow: 0px 1px 1px #F62459;
 }
 .page-header .page-tabs {
   background-color: transparent;
@@ -9057,7 +9069,7 @@ textarea.form-control:focus {
 }
 .page-header .page-tabs li a:hover,
 .page-header .page-tabs li a:focus {
-  background-color: #D88292;
+  background-color: #2ABB9B;
   color: #fff;
 }
 @media screen and (max-width: 991px) {
@@ -9109,7 +9121,7 @@ textarea.form-control:focus {
 }
 .misago-footer .footer-content .misago-branding:hover,
 .misago-footer .footer-content .misago-branding:focus {
-  color: #de95a3;
+  color: #2fd0ac;
 }
 .list-group {
   border-radius: 3px;
@@ -9221,8 +9233,8 @@ textarea.form-control:focus {
 .threads-diff-message .btn.disabled,
 .threads-diff-message .btn.disabled:hover,
 .threads-diff-message .btn.disabled:active {
-  background: #D88292;
-  border: 1px solid #D88292;
+  background: #2ABB9B;
+  border: 1px solid #2ABB9B;
   color: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;

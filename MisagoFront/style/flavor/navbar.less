@@ -7,20 +7,22 @@
   border-bottom: none;
   background: @navbar-bg;
   color: white;
+
+  &hover {
+    background: #fff;
+  }
 }
 
 .navbar-inverse .navbar-nav > li > a {
   color: white;
   background: inherit;
+  transition: 0.3s;
 
   &hover {
     background: inherit;
+    transition: 0.3s;
+    color: @navbar-inverse-link-hover-bg;
   }
-}
-
-.navbar-inverse .navbar-nav > li > a:hover {
-  transition: 0.3s;
-  color: @navbar-inverse-link-hover-bg;
 }
 
 // Round up user's avatar
@@ -33,4 +35,15 @@
 // Round up brand's icon
 .navbar-misago .brand-link img {
   border-radius: @border-radius-small;
+}
+
+.navbar-brand img {
+  background-color: white;
+  transition: 0.3s;
+
+  &hover {
+    transition: 0.3s;
+    background-color: @navbar-inverse-link-hover-color;
+  }
+  
 }
