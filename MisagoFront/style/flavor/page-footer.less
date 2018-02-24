@@ -10,7 +10,7 @@
   .footer-content {
     border-top: 1px solid darken(@page-footer-bg, 10%);
     padding-top: @line-height-computed * 1;
-
+    text-align: center;
     color: @page-footer-text-color;
 
     @media screen and (max-width: @screen-xs-max) {
@@ -29,15 +29,6 @@
     a:hover, a:focus {
       color: @page-footer-link-hover-color;
     }
-
-    .misago-branding {
-      &, &:link, &:visited {
-        color: @page-footer-brand-color;
-      }
-
-      &:hover, &:focus {
-        color: @page-footer-brand-hover-color;
-      }
-    }
+    
   }
 }

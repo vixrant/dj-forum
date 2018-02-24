@@ -15,6 +15,11 @@
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
 @brand-primary:         #eee;
+// VIKINOTE: This is the blue color we have on the t-shirt.
+@brand-secondary:       #0A2342;
+// VIKINOTE: Pretty cool yellow color. Pun intended.
+@brand-fire:            #ffda79;
+@brand-dark-fire:       #D58936;
 @brand-success:         #43a047;
 @brand-info:            #3d5afe;
 @brand-warning:         #ef6c00;
@@ -53,7 +58,7 @@
 //## For each of Bootstrap's buttons, define text, background and border color.
 
 // Default - non primary
-@btn-default-color:              #C33C54;
+@btn-default-color:              #0A2342;
 @btn-default-bg:                 #f5f5f5;
 
 @btn-default-hover-color:        @text-color;
@@ -64,10 +69,10 @@
 
 // Submit form
 @btn-primary-color:              #fff;
-@btn-primary-bg:                 darken(#813B47, 5%);
+@btn-primary-bg:                 @brand-secondary;
 
 @btn-primary-hover-color:        #fff;
-@btn-primary-hover-bg:           #66101F;
+@btn-primary-hover-bg:           #314CB6;
 
 @btn-primary-active-color:       #fff;
 @btn-primary-active-bg:          darken(#b388ff, 15%);
@@ -107,8 +112,8 @@
 
 // Primary outlined
 @btn-primary-outline-color:              #fff;
-@btn-primary-outline-border:             #2ABB9B;
-@btn-primary-outline-bg:                 #2ABB9B;
+@btn-primary-outline-border:             @brand-dark-fire;
+@btn-primary-outline-bg:                 @brand-dark-fire;
 
 @btn-primary-outline-hover-color:        #fff;
 @btn-primary-outline-hover-border:       #B2374D;
@@ -123,11 +128,11 @@
 //
 //##
 
-@navbar-bg:                                #F62459;
+@navbar-bg:                                @brand-secondary;
 
 // Navbar links
 @navbar-inverse-link-color:                #e0e0e0;
-@navbar-inverse-link-hover-color:          #ffda79;
+@navbar-inverse-link-hover-color:          @brand-fire;
 @navbar-inverse-link-hover-bg:             inherit;
 @navbar-inverse-link-active-color:         #fff;
 @navbar-inverse-link-active-bg:            darken(@navbar-default-bg, 6.5%);
@@ -149,9 +154,9 @@
 @navbar-btn-sign-in-border:              @navbar-inverse-link-color;
 @navbar-btn-sign-in-bg:                  transparent;
 
-@navbar-btn-sign-in-hover-color:         #fff;
+@navbar-btn-sign-in-hover-color:         @brand-secondary;
 @navbar-btn-sign-in-hover-border:        #666060;
-@navbar-btn-sign-in-hover-bg:            #666060;
+@navbar-btn-sign-in-hover-bg:            @navbar-inverse-link-hover-color;
 
 @navbar-btn-sign-in-active-color:        #fff;
 @navbar-btn-sign-in-active-border:       #424242;
@@ -164,9 +169,9 @@
 @navbar-btn-register-border:             @navbar-inverse-link-color;
 @navbar-btn-register-bg:                 transparent;
 
-@navbar-btn-register-hover-color:        #212121;
-@navbar-btn-register-hover-border:       #fff;
-@navbar-btn-register-hover-bg:           #fff;
+@navbar-btn-register-hover-color:        @brand-secondary;
+@navbar-btn-register-hover-border:       #666060;
+@navbar-btn-register-hover-bg:           @navbar-inverse-link-hover-color;
 
 @navbar-btn-register-active-color:       #212121;
 @navbar-btn-register-active-border:      #bdbdbd;
@@ -181,7 +186,7 @@
 
 // Basics
 //** Background
-@page-header-bg:              @navbar-bg;
+@page-header-bg:              @brand-secondary;
 
 //** Heading color
 @page-header-color:               #fff;
@@ -199,19 +204,19 @@
 // Buttons
 //** Default
 @page-header-btn-default-color:              #fff;
-@page-header-btn-default-bg:                 #2ABB9B;
+@page-header-btn-default-bg:                 @brand-dark-fire;
 
 @page-header-btn-default-hover-color:        #fff;
-@page-header-btn-default-hover-bg:           #2ABB9B;
+@page-header-btn-default-hover-bg:           @brand-dark-fire;
 
 @page-header-btn-default-active-color:       #fff;
 @page-header-btn-default-active-bg:          #748EA4;
 
 //** Primary
-@page-header-btn-primary-color:              #424242;
+@page-header-btn-primary-color:              @brand-secondary;
 @page-header-btn-primary-bg:                 #f5f5f5;
 
-@page-header-btn-primary-hover-color:        #212121;
+@page-header-btn-primary-hover-color:        @brand-secondary;
 @page-header-btn-primary-hover-bg:           #fff;
 
 @page-header-btn-primary-active-color:       #fff;
@@ -224,10 +229,10 @@
 @page-tabs-link-bg:         transparent;
 
 @page-tabs-link-hover-color:      #fff;
-@page-tabs-link-hover-bg:         #2ABB9B;
+@page-tabs-link-hover-bg:         @brand-dark-fire;
 
 @page-tabs-link-focus-color:      #fff;
-@page-tabs-link-focus-bg:         #2ABB9B;
+@page-tabs-link-focus-bg:         @brand-dark-fire;
 
 @page-tabs-link-active-color:     #424242;
 @page-tabs-link-active-bg:        @scaffolding-bg;
@@ -237,13 +242,13 @@
 //
 //##
 @page-footer-bg:               @body-bg;
-@page-footer-text-color:       #bdbdbd;
+@page-footer-text-color:       @gray-light;
 
 @page-footer-link-color:             #757575;
 @page-footer-link-hover-color:       #212121;
 
-@page-footer-brand-color:            #b388ff;
-@page-footer-brand-hover-color:      lighten(#2ABB9B, 5%);
+@page-footer-brand-color:            @gray-darker;
+@page-footer-brand-hover-color:      lighten(@brand-dark-fire, 5%);
 
 
 //== Auth Message
@@ -260,7 +265,7 @@
 @auth-message-btn-default-hover-border:     #b388ff;
 @auth-message-btn-default-hover-bg:         #b388ff;
 
-@auth-message-btn-default-active-color:     #2ABB9B;
+@auth-message-btn-default-active-color:     @brand-dark-fire;
 @auth-message-btn-default-active-border:    #fff;
 @auth-message-btn-default-active-bg:        #fff;
 
@@ -363,7 +368,7 @@
 @progress-border-radius:      @border-radius-small;
 
 //** Default progress bar color
-@progress-bar-bg:             #FF87AB;
+@progress-bar-bg:             hsl(43, 100%, 50%);
 //** Success progress bar color
 @progress-bar-success-bg:     #00c853;
 //** Warning progress bar color
@@ -473,7 +478,7 @@
 
 // Diff message
 @threads-diff-color:             #fff;
-@threads-diff-bg:                #2ABB9B;
+@threads-diff-bg:                @brand-dark-fire;
 
 @threads-diff-hover-color:       #fff;
 @threads-diff-hover-bg:          #6200ea;
