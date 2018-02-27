@@ -20,7 +20,12 @@ var fs = require('fs');
 var glob = require('glob');
 var del = require('del');
 
-var misago = '/Users/vikirnt/Programming/Projects/DJ-Lit-Forum/djlitforum/theme/static/misago';
+/*
+ *  VIKINOTE:
+ *    This tells the gulp file where to output your static files.
+ *    Be sure to change this in case it fails to work on your machine.
+ */
+var misago = '../theme/static/misago';
 
 // Entry points
 

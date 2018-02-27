@@ -11,8 +11,9 @@
 
 .page-header {
   background-color: @page-header-bg;
-  // background-image: url('../img/page-header.svg');
-  // ^^ This is for the banner image.
+  /* VIKINOTE: 
+   * background-image: url('../img/page-header.svg');
+   * ^^ This is for the banner image. */
   background-size: cover;
   
   @media screen and (min-width: @screen-md-min) {
@@ -140,6 +141,7 @@
 
     &, &:link, &:visited {
       background-color: @page-tabs-link-bg;
+      transition: 0.3s;
       border-radius: @border-radius-small @border-radius-small 0 0;
 
       color: @page-tabs-link-color;
