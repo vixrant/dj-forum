@@ -27,8 +27,6 @@ _ = lambda x: x
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-#with open ('secretkey.txt', 'r') as f:
-#    SECRET_KEY = f.read ()
 SECRET_KEY = "sla$cor3+9!o7$qq_d0g3c1dzrkhz!%a=&q9nuy-ga)c4ga&rl"
 
 # SECURITY WARNING: don't run with debug turned on in production!
