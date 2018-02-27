@@ -44,7 +44,7 @@ The `_frontend_` folder is cloned from Misago's source code.
 #### How to work on these:
 
 - Styling:
-    1. `cd _frontend_`
+    1. `cd _frontend_/`
     2. Install all Node.JS dependencies.
     3. Edit the gulp file to target Misago's template folder.
     4. Run `gulp watchstyle`.

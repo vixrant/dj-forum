@@ -8875,6 +8875,9 @@ a#djvu-link {
 }
 .page-header {
   background-color: #0A2342;
+  /* VIKINOTE: 
+   * background-image: url('../img/page-header.svg');
+   * ^^ This is for the banner image. */
   background-size: cover;
 }
 @media screen and (min-width: 992px) {
@@ -9060,6 +9063,7 @@ a#djvu-link {
 .page-header .page-tabs li a:link,
 .page-header .page-tabs li a:visited {
   background-color: transparent;
+  transition: 0.3s;
   border-radius: 3px 3px 0 0;
   color: #ede7f6;
 }
