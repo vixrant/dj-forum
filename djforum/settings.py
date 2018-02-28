@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import dj_database_url
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -27,31 +28,29 @@ _ = lambda x: x
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "sla$cor3+9!o7$qq_d0g3c1dzrkhz!%a=&q9nuy-ga)c4ga&rl"
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ['DEBUG']
 
 
 # A list of strings representing the host/domain names that this Django site can serve.
 # If you are unsure, just enter here your domain name, eg. ['mysite.com', 'www.mysite.com']
 
-ALLOWED_HOSTS = ["0.0.0.0", "127.0.0.1"]
+ALLOWED_HOSTS = [
+    "0.0.0.0", 
+    "127.0.0.1", 
+    "dj-lit-forum.herokuapp.com/",
+    "forum.vikrant.ga",
+    ]
 
 
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        # Misago requires PostgreSQL to run
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'djlit',
-        'USER': 'djadmin',
-        'PASSWORD': 'dj@lit@',
-        'HOST': 'localhost',
-        'PORT': 5433,
-    }
+    # Misago requires Postgresql to run.
+    'default': dj_database_url.config(default=os.environ ['DATABASE_URL']) 
 }
 
 
