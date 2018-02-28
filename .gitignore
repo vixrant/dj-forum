@@ -1,4 +1,5 @@
 *.pyc
 *.pyo
 secretkey.txt
-.vscode/
+static/
+media/

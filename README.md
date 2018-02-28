@@ -19,6 +19,23 @@ _____
 
 
 
+## Run instructions
+
+1. Install all `requirements.txt`.
+2. Make a postgres table named "djforum", user "djadmin". Note that these will be configurable later. Make changes to DB according to your config.
+3. `python manage.py migrate`.
+4. Make a superuser.
+5. For deployment, `manage.py collectstatic`. For testing, `manage.py runserver`.
+
+### NOTE:
+Be sure to change forum configs if you're running it for the first time. Found at url /admincp/.
+
+
+
+_____
+
+
+
 ## Developer notes
 
 1. The pages are generated using React.js.
@@ -29,7 +46,10 @@ _____
 
 4. Misago isn't documented very well. Use the debug toolbar on the development server and dev tools in your browser to figure crap out.
 
+
 _____
+
+
 
 ### Frontend
 
@@ -45,10 +65,9 @@ The `_frontend_` folder is cloned from Misago's source code.
 
 - Styling:
     1. `cd _frontend_/`
-    2. Install all Node.JS dependencies.
-    3. Edit the gulp file to target Misago's template folder.
-    4. Run `gulp watchstyle`.
-    5. As you change the styling in the LESS files you'll see them reflect on every refresh.
+    2. Install all npm dependencies `npm install`.
+    3. Run `gulp watchstyle`.
+    4. As you change the styling in the LESS files you'll see them reflect on every refresh.
 
 - Templating:
     1. Copy a template from the `_frontend_/templates/` folder into the main project's `theme/templates/`.
@@ -59,4 +78,9 @@ The `_frontend_` folder is cloned from Misago's source code.
 
 - Backend:
     + It's a Django backend! Still pretty flexible.
+
+
+
+###### Helpful links.
+[Deploying.](https://simpleisbetterthancomplex.com/tutorial/2016/08/09/how-to-deploy-django-applications-on-heroku.html)
 
