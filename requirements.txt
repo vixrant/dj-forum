@@ -9,6 +9,7 @@ django-htmlmin==0.10.0
 django-mptt==0.8.7
 djangorestframework==3.6.4
 fake-factory==9999.9.9
+gunicorn==19.7.1
 html5lib==0.999999999
 idna==2.6
 Markdown==2.6.11
