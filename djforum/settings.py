@@ -31,6 +31,7 @@ _ = lambda x: x
 SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# VIKINOTES: Debug is True be default. It tries to look for environment variable.
 DEBUG = os.environ['DEBUG']
 
 
