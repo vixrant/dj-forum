@@ -2,4 +2,4 @@
 *.pyo
 secretkey.txt
 static/
-media/avatars/
+media/avatars/*
