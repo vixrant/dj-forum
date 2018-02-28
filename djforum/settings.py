@@ -50,7 +50,7 @@ ALLOWED_HOSTS = [
 
 DATABASES = {}
 
-if os.environ ['DEBUG'] == 'False':
+if os.environ ['DEBUG'] == 'False' or os.environ ['DB_DEBUG'] == 'True':
     DATABASES = {
         'default': dj_database_url.config(default=os.environ ['DATABASE_URL']) 
     }
