@@ -1,1 +1,0 @@
-Because git doens't allow empty directories.
