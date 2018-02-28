@@ -40,7 +40,7 @@ DEBUG = os.environ['DEBUG']
 ALLOWED_HOSTS = [
     "0.0.0.0", 
     "127.0.0.1", 
-    "dj-lit-forum.herokuapp.com/",
+    "dj-lit-forum.herokuapp.com",
     "forum.vikrant.ga",
     ]
 
