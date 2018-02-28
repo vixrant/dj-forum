@@ -14,7 +14,7 @@ gunicorn==19.7.1
 html5lib==0.999999999
 idna==2.6
 Markdown==2.6.11
-Misago==0.15.0
+Misago==0.16.0
 olefile==0.45.1
 path.py==10.3.1
 Pillow==4.1.1
