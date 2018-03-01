@@ -1,3 +1,0 @@
-[console_scripts]
-misago-start = misago.core.setup:start_misago_project
-

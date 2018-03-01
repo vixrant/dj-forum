@@ -41,7 +41,7 @@ _____
 
 ## Run instructions (Test)
 
-1. Install all `requirements.txt`.
+1. Install all `requirements.txt` on a Python 3 virtual environment.
 2. Make a postgres table named same as `DB_NAME`, user `DB_USER` and password `DB_PASSWORD`. Note that DEGUB should be enabled.
 3. Set the Test environment variables.
 3. `python manage.py migrate`.
