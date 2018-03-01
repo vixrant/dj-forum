@@ -43,7 +43,7 @@ ALLOWED_HOSTS = [
     '127.0.0.1', 
     'dj-lit-forum.herokuapp.com',
     'forum.vikrant.ga',
-    ]
+]
 
 
 # Database
