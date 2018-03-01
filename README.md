@@ -28,7 +28,7 @@ _____
 - `DB_DEBUG` -> Set this to "True" if you want Django in Debug mode as well as you want to access Production server.
 - `SECRET_KEY` -> Django secret key.
 
-#### Test
+#### Test (Not required for now)
 - `DB_NAME` -> Name of database.
 - `DB_USER` -> User of database. Should be `superuser`.
 - `DB_PASSWORD` -> Password to table.
@@ -42,13 +42,12 @@ _____
 ## Run instructions (Test)
 
 1. Install all `requirements.txt` on a Python 3 virtual environment.
-2. Make a postgres table named same as `DB_NAME`, user `DB_USER` and password `DB_PASSWORD`. Note that DEGUB should be enabled.
-3. Set the Test environment variables.
+2. Make a postgres table named "djforum", with a superuser "djadmin" password "@sanghvi@". Note that DEGUB should be enabled.
 3. `python manage.py migrate`.
-4. Make a superuser.
+4. Make a Django superuser `python manage.py createsuperuser`. This is your admin.
 5. `manage.py runserver`.
 
-## Deploy instructions (Production)
+## Heroku Deploy instructions (Production)
 
 1. Make Heroku app with Heroku:Postgresql database.
 2. Set the Production environment variables.
@@ -56,7 +55,7 @@ _____
 4. Push your git commits to Heroku branch.
 
 But wait! That's just the basic of deploying. Here are some important points.
-1. You need a Procfile which has small scripts for a few states of the website.
+1. You need a Procfile which has small scripts for a few states of the website. The runtime.txt and requirements.txt are included here.
 2. You need to ensure you do `manage.py collectstatic` because you're used to Django doing `collectstatic` for you in `runserver`.
 3. You need to ensure everything is working in the localhost.
 4. Try `heroku local web` to run the app locally first. This makes use of the Procfile.
@@ -68,11 +67,16 @@ Be sure to change forum configs if you're running it for the first time. Found a
 
 
 
+
+
+
 _____
 
 
 
-## Developer notes
+## Developer notes - @vixrant
+
+Below are a few notes that I'm keeping for future reference. You may refer to them.
 
 1. The front-end uses React.js with LESS style sheets which have to be compiled to CSS for some reason.
 
@@ -118,7 +122,10 @@ The `_frontend_` folder is cloned from Misago's source code.
     + It's a Django backend! Still pretty flexible.
 
 
+### Deploying
+
+During the development, I've used Heroku for production development. Django doesn't serve media files and Heroku doesn't allow storing media files on their server. Use a different cloud storage like Amazon S3 for this. Refer to Django docs.
+
 
 ###### Helpful links.
 [Deploying.](https://simpleisbetterthancomplex.com/tutorial/2016/08/09/how-to-deploy-django-applications-on-heroku.html)
-
