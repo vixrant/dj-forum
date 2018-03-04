@@ -62,6 +62,8 @@ But wait! That's just the basic of deploying. Here are some important points.
 5. Read up on `.env` file for Heroku!
 6. Set the environment variables on Heroku.
 
+OR Use foreman: https://github.com/ddollar/foreman
+
 ### NOTE:
 Be sure to change forum configs if you're running it for the first time. Found at url /admincp/.
 
