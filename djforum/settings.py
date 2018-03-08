@@ -130,6 +130,12 @@ STATIC_URL = '/static/'
 
 MEDIA_URL = '/media/'
 
+# Media storages using django.storages
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = 'dj-lit-forum.appspot.com'
+GS_AUTO_CREATE_BUCKET = True
+GF_PROJECT_ID = 'dj-lit-forum'
+
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
 # https://docs.djangoproject.com/en/1.11/ref/settings/#static-root
@@ -216,6 +222,8 @@ INSTALLED_APPS = [
     'misago.readtracker',
     'misago.search',
     'misago.faker',
+
+    'storages',
 ]
 
 INTERNAL_IPS = [
