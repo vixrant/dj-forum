@@ -1,5 +1,6 @@
 beautifulsoup4==4.6.0
 bleach==2.0.0
+boto==2.48.0
 cachetools==2.0.1
 certifi==2018.1.18
 chardet==3.0.4
@@ -12,6 +13,7 @@ django-htmlmin==0.10.0
 django-mptt==0.8.7
 django-storages==1.6.5
 djangorestframework==3.6.4
+dropbox==8.7.1
 fake-factory==9999.9.9
 firebase-admin==2.9.0
 future==0.16.0
