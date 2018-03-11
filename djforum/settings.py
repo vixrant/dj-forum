@@ -117,6 +117,7 @@ USE_L10N = True
 USE_TZ = True
 
 # Media storages using django.storages
+# VIKINOTE: Google Cloud Storage using interoperability mode.
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 AWS_ACCESS_KEY_ID = os.environ ['AWS_ACCESS_KEY_ID']
 AWS_SECRET_ACCESS_KEY = os.environ ['AWS_SECRET_ACCESS_KEY']
@@ -223,6 +224,7 @@ INSTALLED_APPS = [
     'misago.search',
     'misago.faker',
 
+    # For cloud
     'storages',
 ]
 
