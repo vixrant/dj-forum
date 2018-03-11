@@ -15,29 +15,28 @@ Base forum
 
 #### Packages used other than Misago dependencies:
 - *pip module*: dj_database_url -> For connecting to S3 12factor database.
-
-
+- *pip module*: django-storages -> For connecting to S3 storage/ Google Cloud storage.
 
 _____
 
 ## Environment variables required.
+Refer to .base_env for scaffolding.
 
 #### Production
 - `DATABASE_URL` -> Link to Heroku 12f database (production only).
 - `DEBUG` -> Django debug more or not. Debug uses localhost Postgresql server.
 - `DB_DEBUG` -> Set this to "True" if you want Django in Debug mode as well as you want to access Production server.
 - `SECRET_KEY` -> Django secret key.
-
-#### Test (Not required for now)
-- `DB_NAME` -> Name of database.
-- `DB_USER` -> User of database. Should be `superuser`.
-- `DB_PASSWORD` -> Password to table.
+- `AWS_ACCESS_KEY_ID` -> Google Cloud Storage interoperability mode access key ID.
+- `AWS_SECRET_ACCESS_KEY` -> Google Cloud Storage interoperability mode secret access key.
 
 #### Email config
 - `EMAIL_ADR` -> The email address to use for sending emails to users.
 - `EMAIL_PASSWORD` -> Password of email address. (Can be Google App Password)
 
-
+## Before run set-up
+- Set up a Google Cloud Platform project and enable interoperability mode.
+- Check out `settings.py` to see config.
 
 ## Run instructions (Test)
 
@@ -46,6 +45,8 @@ _____
 3. `python manage.py migrate`.
 4. Make a Django superuser `python manage.py createsuperuser`. This is your admin.
 5. `manage.py runserver`.
+
+If you wish to access the production database on test server, set `DB_DEBUG` to True.
 
 ## Heroku Deploy instructions (Production)
 

@@ -15,7 +15,6 @@ django-storages==1.6.5
 djangorestframework==3.6.4
 dropbox==8.7.1
 fake-factory==9999.9.9
-firebase-admin==2.9.0
 future==0.16.0
 gapic-google-cloud-datastore-v1==0.15.3
 gapic-google-cloud-error-reporting-v1beta1==0.15.3
