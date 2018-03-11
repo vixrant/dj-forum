@@ -13,7 +13,6 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 import dj_database_url
 
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -117,6 +116,12 @@ USE_L10N = True
 
 USE_TZ = True
 
+# Media storages using django.storages
+DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+GS_BUCKET_NAME = 'dj-lit-forum.appspot.com'
+GF_PROJECT_ID = 'dj-lit-forum'
+STATICFILES_STORAGE = 'storages.backends.gs.GSBotoStorage'
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
@@ -129,12 +134,6 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 MEDIA_URL = '/media/'
-
-# Media storages using django.storages
-DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
-GS_BUCKET_NAME = 'dj-lit-forum.appspot.com'
-GS_AUTO_CREATE_BUCKET = True
-GF_PROJECT_ID = 'dj-lit-forum'
 
 
 # The absolute path to the directory where collectstatic will collect static files for deployment.
