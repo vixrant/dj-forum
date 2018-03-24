@@ -173,9 +173,10 @@ export function Insert(props) {
   }
 
   return (
+    /* VIKINOTE: To make the "Insert" button more visible. */
     <div className="col-xs-6">
       <button
-        className="btn btn-default btn-sm btn-block"
+        className="btn btn-default btn-sm btn-block btn-insert-image"
         onClick={props.onInsert}
         type="button"
       >
