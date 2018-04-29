@@ -132,3 +132,7 @@ During the development, I've used Heroku for production development. Django does
 
 ###### Helpful links.
 [Deploying.](https://simpleisbetterthancomplex.com/tutorial/2016/08/09/how-to-deploy-django-applications-on-heroku.html)
+
+##### License.
+MIT License
+Copyright (c) 2018 Vikrant Gajria
