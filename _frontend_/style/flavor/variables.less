@@ -14,12 +14,11 @@
 @gray-light:             lighten(@gray-base, 46.7%); // #777
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
-@brand-primary:         #eee;
+@brand-primary:         rgba (0, 143, 255, 0.75);
 // VIKINOTE: This is the blue color we have on the t-shirt.
-@brand-secondary:       #0A2342;
+@brand-secondary:       #eee;
 // VIKINOTE: Pretty cool yellow color. Pun intended.
 @brand-fire:            #ffda79;
-@brand-dark-fire:       #D58936;
 @brand-success:         #43a047;
 @brand-info:            #3d5afe;
 @brand-warning:         #ef6c00;
@@ -30,7 +29,7 @@
 //
 //## Settings for some of the most global styles.
 
-@scaffolding-bg:        #F7F6F3;
+@scaffolding-bg:        #fcfcfc;
 
 //** Global text color on `<body>`.
 @text-color:            #101010;
@@ -69,7 +68,7 @@
 
 // Submit form
 @btn-primary-color:              #fff;
-@btn-primary-bg:                 @brand-secondary;
+@btn-primary-bg:                 @brand-primary;
 
 @btn-primary-hover-color:        #fff;
 @btn-primary-hover-bg:           #314CB6;
@@ -112,8 +111,8 @@
 
 // Primary outlined
 @btn-primary-outline-color:              #fff;
-@btn-primary-outline-border:             @brand-dark-fire;
-@btn-primary-outline-bg:                 @brand-dark-fire;
+@btn-primary-outline-border:             @brand-fire;
+@btn-primary-outline-bg:                 @brand-fire;
 
 @btn-primary-outline-hover-color:        #fff;
 @btn-primary-outline-hover-border:       #B2374D;
@@ -128,7 +127,7 @@
 //
 //##
 
-@navbar-bg:                                @brand-secondary;
+@navbar-bg:                                @brand-primary;
 
 // Navbar links
 @navbar-inverse-link-color:                #e0e0e0;
@@ -154,7 +153,7 @@
 @navbar-btn-sign-in-border:              @navbar-inverse-link-color;
 @navbar-btn-sign-in-bg:                  transparent;
 
-@navbar-btn-sign-in-hover-color:         @brand-secondary;
+@navbar-btn-sign-in-hover-color:         black;
 @navbar-btn-sign-in-hover-border:        #666060;
 @navbar-btn-sign-in-hover-bg:            @navbar-inverse-link-hover-color;
 
@@ -169,7 +168,7 @@
 @navbar-btn-register-border:             @navbar-inverse-link-color;
 @navbar-btn-register-bg:                 transparent;
 
-@navbar-btn-register-hover-color:        @brand-secondary;
+@navbar-btn-register-hover-color:        black;
 @navbar-btn-register-hover-border:       #666060;
 @navbar-btn-register-hover-bg:           @navbar-inverse-link-hover-color;
 
@@ -186,37 +185,37 @@
 
 // Basics
 //** Background
-@page-header-bg:              @brand-secondary;
+@page-header-bg:              @scaffolding-bg;
 
 //** Heading color
-@page-header-color:               #fff;
+@page-header-color:               rgba(0,0,0,0.8);
 
 //** Other text color
-@page-header-text-color:          #ededed;
+@page-header-text-color:          rgba(0,0,0,0.7);
 //** Link color
 @page-header-link-color:          #fff;
 //** Text color
 @page-header-link-hover-color:    #f5f5f5;
 
 //** Heading min height
-@page-header-min-height:            8px;
+@page-header-min-height:            8;
 
 // Buttons
 //** Default
-@page-header-btn-default-color:              #fff;
-@page-header-btn-default-bg:                 @brand-dark-fire;
+@page-header-btn-default-color:              black;
+@page-header-btn-default-bg:                 @brand-fire;
 
-@page-header-btn-default-hover-color:        #fff;
-@page-header-btn-default-hover-bg:           @brand-dark-fire;
+@page-header-btn-default-hover-color:        black;
+@page-header-btn-default-hover-bg:           @brand-fire;
 
 @page-header-btn-default-active-color:       #fff;
 @page-header-btn-default-active-bg:          #748EA4;
 
 //** Primary
-@page-header-btn-primary-color:              @brand-secondary;
+@page-header-btn-primary-color:              @brand-primary;
 @page-header-btn-primary-bg:                 #f5f5f5;
 
-@page-header-btn-primary-hover-color:        @brand-secondary;
+@page-header-btn-primary-hover-color:        @brand-primary;
 @page-header-btn-primary-hover-bg:           #fff;
 
 @page-header-btn-primary-active-color:       #fff;
@@ -226,16 +225,16 @@
 @page-tabs-bg:              transparent;
 
 @page-tabs-link-color:      #ede7f6;
-@page-tabs-link-bg:         transparent;
+@page-tabs-link-bg:         @brand-secondary;
 
 @page-tabs-link-hover-color:      #fff;
-@page-tabs-link-hover-bg:         @brand-dark-fire;
+@page-tabs-link-hover-bg:         @brand-fire;
 
 @page-tabs-link-focus-color:      #fff;
-@page-tabs-link-focus-bg:         @brand-dark-fire;
+@page-tabs-link-focus-bg:         @brand-fire;
 
 @page-tabs-link-active-color:     #424242;
-@page-tabs-link-active-bg:        @scaffolding-bg;
+@page-tabs-link-active-bg:        @brand-primary;
 
 
 //== Footer
@@ -248,7 +247,7 @@
 @page-footer-link-hover-color:       #212121;
 
 @page-footer-brand-color:            @gray-darker;
-@page-footer-brand-hover-color:      lighten(@brand-dark-fire, 5%);
+@page-footer-brand-hover-color:      lighten(@brand-fire, 5%);
 
 
 //== Auth Message
@@ -265,7 +264,7 @@
 @auth-message-btn-default-hover-border:     #b388ff;
 @auth-message-btn-default-hover-bg:         #b388ff;
 
-@auth-message-btn-default-active-color:     @brand-dark-fire;
+@auth-message-btn-default-active-color:     @brand-fire;
 @auth-message-btn-default-active-border:    #fff;
 @auth-message-btn-default-active-bg:        #fff;
 
@@ -478,7 +477,7 @@
 
 // Diff message
 @threads-diff-color:             #fff;
-@threads-diff-bg:                @brand-dark-fire;
+@threads-diff-bg:                @brand-fire;
 
 @threads-diff-hover-color:       #fff;
 @threads-diff-hover-bg:          #6200ea;
