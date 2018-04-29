@@ -42,7 +42,7 @@
       </li>
       <li>
         <a href="https://www.djvu.in/" id="djvu-link">
-          {% trans "DJVU-Newsletter" %}
+          {% trans "DJVU" %}
         </a>
       </li>
     </ul>
@@ -96,6 +96,11 @@
     <li>
       <a href="{% url 'misago:users' %}">
         <i class="material-icon">group</i>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.djvu.in/">
+        <i class="material-icon">announcement</i>
       </a>
     </li>
     {% if user.acl_cache.can_search %}
