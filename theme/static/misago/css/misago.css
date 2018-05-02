@@ -8533,7 +8533,7 @@ abbr {
 .btn-primary.btn-outline.disabled:active {
   background: #ffda79;
   border: 1px solid #ffda79;
-  color: #fff;
+  color: #000;
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -8547,8 +8547,8 @@ abbr {
 }
 .btn-primary.btn-outline:hover,
 .btn-primary.btn-outline:focus {
-  background: #B2374D;
-  border: 1px solid #B2374D;
+  background: #ffda79;
+  border: 1px solid #ffda79;
   color: #fff;
   -webkit-box-shadow: none;
   box-shadow: none;
