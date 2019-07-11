@@ -3,6 +3,12 @@ DJ-Lit-Forum
 Forum Application by DJ Literary Society
 -----------------------------------------
 
+## 🚫 UNMAINTAINED
+
+> This website was never shown to the principal. I am archiving it so that no one contributes to this website.
+> It served as a good learning project for web development when I was in first year.
+> I am keeping it here as an example Misago forum project hosted on Heroku.
+
 A forum web app for the entire college of Dwarkadas J. Sanghvi by a member of the technical co-committee in DJ Literary Society. The forum makes use of different categories for the different departments and threads in each of these categories.
 
 ## Technology Stack
@@ -135,4 +141,4 @@ During the development, I've used Heroku for production development. Django does
 
 ##### License.
 MIT License
-Copyright (c) 2018 Vikrant Gajria
+Copyright (c) 2018, 2019 Vikrant Gajria
